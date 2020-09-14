@@ -50,6 +50,12 @@ header > nav {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+#internal_links {
+	height: 250px;
 }
 
 header > nav > a {
@@ -57,7 +63,10 @@ header > nav > a {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-top: 40px;
+	justify-content: center;
+	width: 100%;
+	height: 50px;
+	/* margin-top: 20px; */
 }
 
 header > nav > a > p {
@@ -91,7 +100,7 @@ header > nav > a > p {
 }
 
 #internal_links a:last-child {
-	margin-bottom: 50px;
+	margin-bottom: 0px;
 }
 
 #external_links > a:hover,
@@ -100,6 +109,7 @@ header > nav > a > p {
 }
 
 #external_links > a {
+	height: 25px;
 	margin-top: 10px;
 }
 
@@ -117,6 +127,11 @@ header > nav > a > p {
 
 #icon_attribution span {
 	text-decoration: none;
+}
+
+.menu-labels {
+	font-size: 14px;
+	font-weight: bold;
 }
 
 .icon {
@@ -244,7 +259,7 @@ section {
 .container .arrow .inner {
 	width: 0;
 	height: 0;
-	border-right: 20px solid rgb(250, 205, 0)
+	border-right: 20px solid rgb(250, 205, 0);
 	border-top: 10px solid transparent;
 	border-bottom: 10px solid transparent;
 	position: absolute;
