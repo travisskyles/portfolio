@@ -16,7 +16,7 @@ body {
    ------------ */
 
 header {
-	width: 65px;
+	min-width: 65px !important;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -66,9 +66,24 @@ header > nav > a > p {
 	margin: 0;
 }
 
+#internal_links > a:hover:first-child,
+#internal_links > a:hover:first-child * {
+	color: rgb(250, 205, 0);
+}
+
+#internal_links > a:nth-child(2):hover,
+#internal_links > a:nth-child(2):hover * {
+	color: rgb(113, 255, 47);
+}
+
+#internal_links > a:nth-child(3):hover,
+#internal_links > a:nth-child(3):hover * {
+	color: rgb(255, 47, 82);
+}
+
 #internal_links > a:hover,
 #internal_links > a:hover * {
-	color: rgb(250, 205, 0);
+	color: rgb(47, 179, 255);
 }
 
 #internal_links a:first-child {
@@ -81,11 +96,15 @@ header > nav > a > p {
 
 #external_links > a:hover,
 #external_links > a:hover * {
-	color: rgb(250, 205, 0);
+	color: white;
 }
 
 #external_links > a {
 	margin-top: 10px;
+}
+
+#external_links a:last-child {
+	position: relative;
 }
 
 .icon {
@@ -149,12 +168,12 @@ section {
 }
 
 #greeting_buttons > a:nth-child(1) {
-	border: 2px solid rgb(113, 255, 47);
+	border: 2px solid rgb(255, 47, 82);
 }
 
 #greeting_buttons > a:nth-child(1):hover {
-	border: 2px solid rgb(113, 255, 47);
-	background-color: rgb(113, 255, 47);
+	border: 2px solid rgb(255, 47, 82);
+	background-color: rgb(255, 47, 82);
 	color: rgb(40, 40, 40);
 }
 
@@ -169,11 +188,11 @@ section {
 }
 
 #greeting_buttons > a:nth-child(3) {
-	border: 2px solid rgb(255, 47, 82);
+	border: 2px solid rgb(113, 255, 47);
 }
 
 #greeting_buttons > a:nth-child(3):hover {
-	border: 2px solid rgb(255, 47, 82);
-	background-color: rgb(255, 47, 82);
+	border: 2px solid rgb(113, 255, 47);
+	background-color: rgb(113, 255, 47);
 	color: rgb(40, 40, 40);
 }

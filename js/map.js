@@ -15,7 +15,8 @@ function initMap() {
 				elementType: 'geometry',
 				stylers: [
 					{
-						color: '#facd00',
+						// color: '#facd00',
+						color: '#2fb3ff',
 					},
 				],
 			},

@@ -16,7 +16,7 @@
 				<!-- <p>TS</p> -->
 			</div>
 			<nav class="header-links" id="internal_links">
-				<a href="">
+				<a href="/index.html">
 					<p class="icon icon-home-button"></p>
 					<!-- <p class="menu-labels">Home</p> -->
 				</a>
@@ -28,7 +28,7 @@
 					<p class="icon icon-code"></p>
 					<!-- <p class="menu-labels">Projects</p> -->
 				</a>
-				<a href="">
+				<a href="contact.html">
 					<p class="icon icon-black-envelope-email-symbol"></p>
 					<!-- <p class="menu-labels">Contact</p> -->
 				</a>
@@ -45,14 +45,44 @@
 				</a>
 			</nav>
 		</header>
-		<section>
-			<div id="contact_form">
-				<div id="map_label"></div>
+		<section id="contact_form">
+			<div>
 				<h1>Contact Me</h1>
-				<p>I am always interested.....</p>
+				<p id="contact_details">
+					Travis Skyles <br />
+					<u>Travis.Skyles@gmail.com</u> <br />
+					Beaverton, OR, USA
+				</p>
+				<p id="contact_message">
+					I am always interested in taking on new and interesting opportunities.
+					If you would like to get in contact with me, don't hesitate to contact
+					me.
+				</p>
+				<form action="POST">
+					<div>
+						<input type="text" name="name" id="name" placeholder="Name" />
+						<input type="text" name="email" id="email" placeholder="Email" />
+					</div>
+					<div>
+						<input
+							type="text"
+							name="subject"
+							id="subject"
+							placeholder="Subject"
+						/>
+						<textarea
+							name="message"
+							id="message"
+							placeholder="Message"
+							cols="30"
+							rows="12"
+						></textarea>
+					</div>
+					<input id="submit" type="submit" value="SEND" />
+				</form>
 			</div>
 		</section>
-		<section id="map_wrap"><div id="map"></div></section>
+		<section id="map"><div id="map"></div></section>
 		<script src="../js/map.js"></script>
 	</body>
 </html>
