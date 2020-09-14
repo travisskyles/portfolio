@@ -1,0 +1,16 @@
+#contact_form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#map_wrap {
+	width: 50%;
+	height: 100vh;
+	margin: 0;
+}
+
+#map {
+	width: 100%;
+	height: 100%;
+}

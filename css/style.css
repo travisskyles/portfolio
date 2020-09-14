@@ -1,10 +1,19 @@
+html,
 body {
-	min-height: 100vh;
+	height: 100%;
+}
+
+body {
+	/* min-height: 100vh; */
 	margin: 0;
 	display: flex;
 	flex-direction: row;
 	background-color: rgb(40, 40, 40);
 }
+
+/* ------------
+   ---header---
+   ------------ */
 
 header {
 	width: 65px;
@@ -26,9 +35,15 @@ header {
 	width: 100%;
 }
 
-#nav_logo p:first-child {
+#nav_logo a {
+	text-decoration: none;
+	color: lightgray;
 	font-size: 32px;
 	margin: 10px 0 10px 0;
+}
+
+#nav_logo a:hover {
+	color: rgb(250, 205, 0);
 }
 
 header > nav {
@@ -53,7 +68,7 @@ header > nav > a > p {
 
 #internal_links > a:hover,
 #internal_links > a:hover * {
-	color: rgb(251, 205, 0);
+	color: rgb(250, 205, 0);
 }
 
 #internal_links a:first-child {
@@ -66,7 +81,7 @@ header > nav > a > p {
 
 #external_links > a:hover,
 #external_links > a:hover * {
-	color: rgb(251, 205, 0);
+	color: rgb(250, 205, 0);
 }
 
 #external_links > a {
@@ -90,10 +105,13 @@ header > nav > a > p {
 	font-size: 20px;
 }
 
+/* ------------
+   --section---
+   ------------ */
+
 section {
 	display: flex;
 	flex-direction: row;
-	/* padding: 10%; */
 	margin: auto;
 	color: white;
 }
@@ -119,6 +137,7 @@ section {
 
 #greeting_buttons > a {
 	color: white;
+	font-weight: bold;
 	margin-top: 30px;
 	box-sizing: border-box;
 	text-decoration: none;
@@ -130,31 +149,31 @@ section {
 }
 
 #greeting_buttons > a:nth-child(1) {
-	border: 1px solid rgb(113, 255, 47);
+	border: 2px solid rgb(113, 255, 47);
 }
 
 #greeting_buttons > a:nth-child(1):hover {
-	border: 1px solid rgb(113, 255, 47);
+	border: 2px solid rgb(113, 255, 47);
 	background-color: rgb(113, 255, 47);
 	color: rgb(40, 40, 40);
 }
 
 #greeting_buttons > a:nth-child(2) {
-	border: 1px solid rgb(47, 179, 255);
+	border: 2px solid rgb(47, 179, 255);
 }
 
 #greeting_buttons > a:nth-child(2):hover {
-	border: 1px solid rgb(47, 179, 255);
+	border: 2px solid rgb(47, 179, 255);
 	background-color: rgb(47, 179, 255);
 	color: rgb(40, 40, 40);
 }
 
 #greeting_buttons > a:nth-child(3) {
-	border: 1px solid rgb(255, 47, 82);
+	border: 2px solid rgb(255, 47, 82);
 }
 
 #greeting_buttons > a:nth-child(3):hover {
-	border: 1px solid rgb(255, 47, 82);
+	border: 2px solid rgb(255, 47, 82);
 	background-color: rgb(255, 47, 82);
 	color: rgb(40, 40, 40);
 }
