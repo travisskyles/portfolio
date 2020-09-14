@@ -5,6 +5,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<link rel="stylesheet" href="imgs/icons/style.css" />
+
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+			crossorigin="anonymous"
+		></script>
+
 		<title>Travis Skyles</title>
 	</head>
 	<body>
@@ -42,9 +49,25 @@
 				>
 					<span class="icon icon-linkedin-logo"></span>
 				</a>
-				<a href="" title="attribution info">
+				<a id="attr_info" href="">
 					<span class="icon icon-info"></span>
 				</a>
+				<div id="attr_box" class="container hidden">
+					<div class="arrow">
+						<div class="outer"></div>
+						<div class="inner"></div>
+					</div>
+					<div class="message-body">
+						Icons made by
+						<a href="https://www.flaticon.com/authors/google" title="Google"
+							>Google</a
+						>
+						from
+						<a href="https://www.flaticon.com/" title="Flaticon">
+							www.flaticon.com</a
+						>
+					</div>
+				</div>
 			</nav>
 		</header>
 		<section>
@@ -57,5 +80,6 @@
 				<a href="">View My Resume</a>
 			</div>
 		</section>
+		<script src="js/header.js"></script>
 	</body>
 </html>
