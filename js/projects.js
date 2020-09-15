@@ -7,8 +7,26 @@ const projects = [
 			'An app that displays a graphical representation of a variety of different search algorithms to find the shortest path between two points.',
 		tags: ['React', 'Javascript', 'CSS'],
 		image: '../imgs/gifs/algo-vis.gif',
-		url: 'skyles-algo-visualizer.netlify.app',
+		url: 'https://skyles-algo-visualizer.netlify.app',
 		github: 'https://github.com/tskyles/algorithim_visualizer',
+	},
+	{
+		name: 'Smart Mirror',
+		description:
+			'A modular smart mirror display application created using node.js for use with a raspberry pi.',
+		tags: ['Javascript', 'CSS', 'HTML', 'EJS', 'Node', 'Express'],
+		image: '../imgs/gifs/smart-mirror.gif',
+		url: 'https://skyles-smart-mirror.herokuapp.com/',
+		github: 'https://github.com/tskyles/smart-mirror',
+	},
+	{
+		name: 'Pocket Gallery',
+		description:
+			"An application that allows a user to search and save works of art from the Harvard Art Museum's online gallery.",
+		tags: ['Javascript', 'CSS', 'HTML', 'EJS', 'Node', 'Express', 'PostgreSQL'],
+		image: '../imgs/gifs/pocket-gallery.gif',
+		url: 'http://www.pocketgallery.art',
+		github: 'https://github.com/Renaissance-devs/pocket_gallery',
 	},
 ];
 
@@ -35,11 +53,13 @@ $(function () {
 		const urlLink = $('<a/>', {
 			id: 'url_link',
 			href: project.url,
+			target: '_blank',
 			text: 'Website',
 		});
 		const githubLink = $('<a/>', {
 			id: 'github_link',
 			href: project.github,
+			target: '_blank',
 			text: 'GitHub',
 		});
 		buttonWrap.append(urlLink).append(githubLink);

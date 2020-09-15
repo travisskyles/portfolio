@@ -6,7 +6,8 @@ section {
 
 section h1 {
 	font-size: 55px;
-	/* margin-left: 50px; */
+	margin-bottom: 10px;
+	margin-left: 2.5%;
 }
 
 section > div:first-child {
@@ -16,25 +17,27 @@ section > div:first-child {
 
 section > div:last-child {
 	width: 85%;
-	height: 70vh;
+	height: 85vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-bottom: 25px;
 }
 
 #project_wrapper {
-	/* padding-right: 5%; */
-	border: 2px solid rgb(255, 47, 82);
+	/* border: 2px solid rgb(255, 47, 82); */
+	overflow: auto;
 }
 
 .project-display {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	width: 90%;
-	/* max-height: 400px; */
+	width: 100%;
 	padding: 20px;
+	padding-left: 0;
 	box-sizing: border-box;
+	border-bottom: 2px solid rgb(30, 30, 30);
 }
 
 .project-info {
@@ -45,6 +48,7 @@ section > div:last-child {
 	justify-content: flex-start;
 	align-items: center;
 	padding: 5%;
+	padding-left: 0;
 	padding-top: 0;
 }
 
@@ -105,6 +109,18 @@ section > div:last-child {
 	border: 2px solid rgb(255, 47, 82);
 }
 
+#url_link:hover {
+	background-color: rgb(255, 47, 82);
+	border: 2px solid rgb(255, 47, 82);
+	color: rgb(30, 30, 30);
+}
+
+#github_link:hover {
+	background-color: white;
+	border: 2px solid white;
+	color: rgb(30, 30, 30);
+}
+
 .skill-tag {
 	color: rgb(30, 30, 30);
 	font-size: 12px;
@@ -126,4 +142,49 @@ section > div:last-child {
 .css {
 	background-color: rgb(38, 78, 228);
 	border: 2px solid rgb(38, 78, 228);
+}
+
+.html {
+	background-color: rgb(229, 77, 38);
+	border: 2px solid rgb(229, 77, 38);
+}
+
+.ejs {
+	background-color: rgb(169, 30, 80);
+	border: 2px solid rgb(169, 30, 80);
+}
+
+.node {
+	background-color: rgb(104, 160, 99);
+	border: 2px solid rgb(104, 160, 99);
+}
+
+.express {
+	background-color: rgb(247, 223, 29);
+	border: 2px solid rgb(247, 223, 29);
+}
+
+.postgresql {
+	background-color: rgb(51, 102, 145);
+	border: 2px solid rgb(51, 102, 145);
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: rgb(40, 40, 40);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: rgba(130, 130, 130, 0.3);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: rgba(130, 130, 130);
 }
