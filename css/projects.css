@@ -130,43 +130,43 @@ section > div:last-child {
 }
 
 .react {
-	background-color: rgb(93, 188, 210);
-	border: 2px solid rgb(93, 188, 210);
+	background-color: rgba(93, 188, 210, 0.8);
+	border: 2px solid rgba(93, 188, 210, 0.8);
 }
 
 .javascript {
-	background-color: rgb(247, 223, 29);
-	border: 2px solid rgb(247, 223, 29);
+	background-color: rgba(247, 223, 29, 0.8);
+	border: 2px solid rgba(247, 223, 29, 0.8);
 }
 
 .css {
-	background-color: rgb(38, 78, 228);
-	border: 2px solid rgb(38, 78, 228);
+	background-color: rgba(38, 78, 228, 0.8);
+	border: 2px solid rgba(38, 78, 228, 0.8);
 }
 
 .html {
-	background-color: rgb(229, 77, 38);
-	border: 2px solid rgb(229, 77, 38);
+	background-color: rgba(229, 77, 38, 0.8);
+	border: 2px solid rgba(229, 77, 38, 0.8);
 }
 
 .ejs {
-	background-color: rgb(169, 30, 80);
-	border: 2px solid rgb(169, 30, 80);
+	background-color: rgba(169, 30, 80, 0.8);
+	border: 2px solid rgba(169, 30, 80, 0.8);
 }
 
 .node {
-	background-color: rgb(104, 160, 99);
-	border: 2px solid rgb(104, 160, 99);
+	background-color: rgba(104, 160, 99, 0.8);
+	border: 2px solid rgba(104, 160, 99, 0.8);
 }
 
 .express {
-	background-color: rgb(247, 223, 29);
-	border: 2px solid rgb(247, 223, 29);
+	background-color: rgba(247, 223, 29, 0.8);
+	border: 2px solid rgba(247, 223, 29, 0.8);
 }
 
 .postgresql {
-	background-color: rgb(51, 102, 145);
-	border: 2px solid rgb(51, 102, 145);
+	background-color: rgba(51, 102, 145, 0.8);
+	border: 2px solid rgba(51, 102, 145, 0.8);
 }
 
 /* width */
