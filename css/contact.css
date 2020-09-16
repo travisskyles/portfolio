@@ -45,7 +45,16 @@ form > div:first-child {
 
 form > div:last-child {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	width: 100%;
+	margin-top: 10px;
+}
+
+form > div:last-child > p {
+	margin: 0;
+	/* margin-right: 10px; */
 }
 
 form input {
@@ -56,6 +65,10 @@ form input {
 	background-color: rgb(30, 30, 30);
 	color: rgb(130, 130, 130);
 }
+
+/* form input:invalid {
+	border: 1px solid rgb(255, 47, 82);
+} */
 
 #subject,
 #message,
@@ -90,8 +103,12 @@ form > div > textarea {
 	text-align: center;
 	border: 2px solid rgb(47, 179, 255);
 	align-self: flex-end;
+	justify-self: flex-end;
 	color: white;
 	font-weight: bold;
+	margin-top: 0;
+	margin-left: 50px;
+	padding: 0;
 }
 
 #submit:hover {
