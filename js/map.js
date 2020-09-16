@@ -229,7 +229,7 @@ function initMap() {
 		position: beaverton,
 		map: map,
 		icon: {
-			url: 'http://maps.google.com/mapfiles/kml/paddle/wht-stars.png',
+			url: 'https://maps.google.com/mapfiles/kml/paddle/wht-stars.png',
 		},
 	});
 }
