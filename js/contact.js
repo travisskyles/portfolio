@@ -15,9 +15,8 @@ $(function () {
 		};
 
 		isValid = showError(email, name, subject, message);
-		$('#form_message_text').text('Sending...').removeClass('hidden');
-
 		if (isValid) {
+			$('#form_message_text').text('Sending...').removeClass('hidden');
 			$.ajax({
 				type: 'POST',
 				url: 'https://tskyles-portfolio-server.herokuapp.com/sendmail',
