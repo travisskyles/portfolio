@@ -15,6 +15,15 @@ p {
 	line-height: 1.5rem;
 }
 
+/* ----------------
+   ---functional---
+   ----classes-----
+   ---------------- */
+
+.hidden {
+	display: none;
+}
+
 /* ------------
    ---header---
    ------------ */
@@ -27,7 +36,6 @@ header {
 	align-items: center;
 	background-color: rgb(30, 30, 30);
 	padding-bottom: 25px;
-	margin-right: 65px;
 }
 
 #nav_logo {
@@ -166,71 +174,8 @@ section {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	/* margin: auto; */
+	padding: 25px 65px;
 	color: white;
-}
-
-#greeting {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	margin-bottom: 100px;
-}
-
-#greeting > h1 {
-	font-size: 55px;
-}
-
-#greeting_buttons {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	margin-left: 100px;
-	margin-bottom: 140px;
-}
-
-#greeting_buttons > a {
-	width: 205px;
-	color: white;
-	font-weight: bold;
-	margin-top: 30px;
-	box-sizing: border-box;
-	text-decoration: none;
-	padding: 10px 20px;
-	border: 1px solid white;
-	font-size: 14px;
-	text-align: center;
-	letter-spacing: 4px;
-}
-
-#greeting_buttons > a:nth-child(1) {
-	border: 2px solid rgb(255, 47, 82);
-}
-
-#greeting_buttons > a:nth-child(1):hover {
-	border: 2px solid rgb(255, 47, 82);
-	background-color: rgb(255, 47, 82);
-	color: rgb(40, 40, 40);
-}
-
-#greeting_buttons > a:nth-child(2) {
-	border: 2px solid rgb(47, 179, 255);
-}
-
-#greeting_buttons > a:nth-child(2):hover {
-	border: 2px solid rgb(47, 179, 255);
-	background-color: rgb(47, 179, 255);
-	color: rgb(40, 40, 40);
-}
-
-#greeting_buttons > a:nth-child(3) {
-	border: 2px solid rgb(113, 255, 47);
-}
-
-#greeting_buttons > a:nth-child(3):hover {
-	border: 2px solid rgb(113, 255, 47);
-	background-color: rgb(113, 255, 47);
-	color: rgb(40, 40, 40);
 }
 
 /* ----------------
@@ -295,11 +240,9 @@ section {
 	color: rgb(250, 205, 0);
 }
 
-/* ----------------
-   ---functional---
-   ----classes-----
-   ---------------- */
-
-.hidden {
-	display: none;
+@media screen and (max-width: 799px) {
+	section {
+		display: flex;
+		flex-direction: column;
+	}
 }
