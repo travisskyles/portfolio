@@ -136,6 +136,7 @@ header > nav > a > p {
 .menu-labels {
 	font-size: 14px;
 	font-weight: bold;
+	color: rgb(30, 30, 30);
 }
 
 .icon {
