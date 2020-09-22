@@ -10,7 +10,7 @@
 	margin-left: 10%;
 }
 
-#contact_form > div > h1 {
+h1 {
 	font-size: 55px;
 	margin: 0;
 	color: rgb(47, 179, 255);
@@ -116,4 +116,40 @@ form > div > textarea {
 	background-color: rgb(47, 179, 255);
 	color: rgb(40, 40, 40);
 	font-weight: bold;
+}
+
+@media screen and (max-width: 1199px) {
+	#map {
+		width: 30%;
+	}
+
+	#contact_form > div {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 799px) {
+	#map {
+		display: none;
+	}
+
+	#contact_form {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 599px) {
+	h1 {
+		font-size: 48px;
+	}
+
+	form > div:first-child {
+		flex-direction: column;
+	}
+
+	#name,
+	#email {
+		width: 100%;
+		margin-top: 10px;
+	}
 }
