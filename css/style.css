@@ -1,10 +1,10 @@
 html,
 body {
 	height: 100%;
+	/* width: 100%; */
 }
 
 body {
-	/* min-height: 100vh; */
 	margin: 0;
 	display: flex;
 	flex-direction: row;
@@ -13,6 +13,10 @@ body {
 
 p {
 	line-height: 1.5rem;
+}
+
+h1 {
+	margin-top: 0;
 }
 
 /* ----------------
@@ -42,6 +46,7 @@ header {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	background-color: black;
 	color: lightgray;
 	width: 100%;
@@ -176,6 +181,7 @@ section {
 	width: 100%;
 	padding: 25px 65px;
 	color: white;
+	box-sizing: border-box;
 }
 
 /* ----------------
@@ -241,8 +247,56 @@ section {
 }
 
 @media screen and (max-width: 799px) {
+	body {
+		flex-direction: column;
+	}
+
+	header {
+		flex-direction: row;
+		padding: 0;
+		padding-right: 20px;
+		width: 100%;
+		height: 65px;
+	}
+
+	header > nav {
+		flex-direction: row;
+	}
+
+	.menu-labels {
+		color: rgb(130, 130, 130);
+	}
+
+	#nav_logo {
+		width: 75px;
+		height: 65px;
+	}
+
+	.icon-wrapper {
+		height: 100%;
+	}
+
+	#internal_links {
+		height: 65px;
+	}
+
+	#external_links {
+		flex-direction: column;
+		width: 50px;
+		margin: 10px 0;
+	}
+
+	#external_links a {
+		margin: 0;
+	}
+
+	#attr_info {
+		display: none;
+	}
+
 	section {
 		display: flex;
 		flex-direction: column;
+		width: 100%;
 	}
 }
