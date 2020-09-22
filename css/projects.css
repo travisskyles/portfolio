@@ -212,6 +212,7 @@ section > div:last-child {
 	.project-display {
 		flex-direction: column-reverse;
 		align-items: center;
+		padding: 20px 0;
 	}
 
 	.project-info {
@@ -229,6 +230,12 @@ section > div:last-child {
 	}
 
 	.image-wrapper {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 449px) {
+	.info-wrapper p {
 		width: 100%;
 	}
 }

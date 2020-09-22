@@ -32,6 +32,7 @@
 }
 
 #greeting_buttons > a:nth-child(1) {
+	margin-top: 0;
 	border: 2px solid rgb(255, 47, 82);
 }
 
@@ -84,6 +85,10 @@
 }
 
 @media screen and (max-width: 599px) {
+	#greeting > h1 {
+		font-size: 48px;
+	}
+
 	section {
 		justify-content: flex-start;
 	}

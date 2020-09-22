@@ -300,3 +300,9 @@ section {
 		width: 100%;
 	}
 }
+
+@media screen and (max-width: 449px) {
+	section {
+		padding: 25px;
+	}
+}
