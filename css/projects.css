@@ -61,6 +61,13 @@ section > div:last-child {
 	text-align: center;
 }
 
+.skills-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	max-width: 60%;
+}
+
 .info-wrapper {
 	display: flex;
 	flex-direction: column;

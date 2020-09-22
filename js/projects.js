@@ -35,7 +35,7 @@ $(function () {
 		const skillDiv = $('<div class="skills-wrapper"></div>');
 		for (let tag of project.tags) {
 			skillDiv.append(
-				`<span class='skill-tag ${tag.toLowerCase()}'>${tag}</span>`
+				`<div class='skill-tag ${tag.toLowerCase()}'>${tag}</div>`
 			);
 		}
 		const h4 = $(`<h4>${project.name}</h4>`);
