@@ -206,6 +206,7 @@ section > div:last-child {
 
 	section h1 {
 		margin-left: 0;
+		font-size: 48px;
 	}
 
 	.project-display {
